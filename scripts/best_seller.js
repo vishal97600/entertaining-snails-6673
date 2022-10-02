@@ -961,8 +961,6 @@ let prod = [
   },
 ];
 
-let productcount=document.getElementById("itemcount")
-productcount.innerText=`${prod.length} items`
 
 for (let k of prod) {
   k.flag = 0;
@@ -1017,17 +1015,17 @@ let append = (prod) => {
 
     // icon_div_outer.innerHTML = `<button id='icon-heart-hollow' style='font-size:24px;color: #d8a353'> <i class='far fa-heart'></i></button>`;
 
-    icon_div_outer.onclick = () => {
-      console.log("onclick");
-      if (el.flag == 0) {
-        // icon_div_outer.innerHTML = `<button id='icon-heart-fill' style='font-size:24px;color:#d8a353'><i class='fas fa-heart'></i></button>`;
-        // el.flag = 1;
-      } else if (el.flag == 1) {
-        // icon_div_outer.innerHTML = `<button id='icon-heart-hollow' style='font-size:24px;color: #d8a353'> <i class='far fa-heart'></i></button>`;
-        // el.flag = 0;
-      }
+    // icon_div_outer.onclick = () => {
+    //   console.log("onclick");
+    //   if (el.flag == 0) {
+    //     // icon_div_outer.innerHTML = `<button id='icon-heart-fill' style='font-size:24px;color:#d8a353'><i class='fas fa-heart'></i></button>`;
+    //     // el.flag = 1;
+    //   } else if (el.flag == 1) {
+    //     // icon_div_outer.innerHTML = `<button id='icon-heart-hollow' style='font-size:24px;color: #d8a353'> <i class='far fa-heart'></i></button>`;
+    //     // el.flag = 0;
+    //   }
   
-    };
+    // };
    
 
     img2.addEventListener("click", function () {
@@ -1099,7 +1097,8 @@ let priceFunc = () => {
   }
 };
 
-
+let productcount=document.getElementById("itemcount")
+productcount.innerText=`${prod.length} items`
 
 
 let sortbtn = document.getElementById("sortby");
